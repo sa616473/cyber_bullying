@@ -27,7 +27,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       for (let element of elements) {
         if (element.children.length === 0 && element.textContent.trim() !== '') {
           let text = element.textContent.trim();
-          if (request.data[text] && request.data[text].toxicity > 0.5) {
+          console.log(request.data[text])
+          if (request.data[text] && request.data[text].toxicity > 0.01) {
             element.style.backgroundColor = 'red';
           }
         }

@@ -2,23 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cyberbullying Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbullying Detection Test</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .bullying-text {
+            color: #d9534f;
+            background-color: #ffdddd;
+            border-left: 4px solid #d9534f;
+        }
+        .positive-text {
+            color: #5cb85c;
+            background-color: #dff0d8;
+            border-left: 4px solid #5cb85c;
+        }
+    </style> -->
 </head>
-<body>
-    <h1>Cyberbullying Detection Test</h1>
-    <p class="bullying">You're so stupid; no one likes you.</p>
-    <p class="non-bullying">I hope you have a great day!</p>
-    <span class="bullying">Why don't you just disappear?</span>
-    <span class="non-bullying">Congratulations on your achievement!</span>
-    <a href="#" class="bullying">Everyone thinks you're a loser.</a>
-    <a href="#" class="non-bullying">Check out this amazing article.</a>
-    <ul>
-        <li class="bullying">You're pathetic.</li>
-        <li class="non-bullying">Let's work together on this project.</li>
-    </ul>
-    <div>
-        <p class="bullying">Nobody wants you here.</p>
-        <p class="non-bullying">Welcome to the community!</p>
+<body class="container mx-auto px-4 py-8 max-w-2xl">
+    <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Cyberbullying Detection Test</h1>
+    
+    <div class="space-y-4">
+        <div class="p-4 rounded bullying-text">
+            <p>You're such a worthless failure; everyone can see how pathetic you are.</p>
+        </div>
+        
+        <div class="p-4 rounded positive-text">
+            <p>I believe in you and your potential to succeed!</p>
+        </div>
+        
+        <div class="p-4 rounded bullying-text">
+            <span>Why don't you just give up? You'll never amount to anything.</span>
+        </div>
+        
+        <div class="p-4 rounded positive-text">
+            <span>Your hard work is truly inspiring!</span>
+        </div>
+        
+        <div class="p-4 rounded bullying-text">
+            <a href="#" class="underline">You're a complete embarrassment to everyone around you.</a>
+        </div>
+        
+        <div class="p-4 rounded positive-text">
+            <a href="#" class="underline">Here's a resource that might help you grow.</a>
+        </div>
+        
+        <ul class="space-y-2">
+            <li class="p-4 rounded bullying-text">
+                You're so annoying that people pretend not to see you.
+            </li>
+            <li class="p-4 rounded positive-text">
+                Teamwork makes the dream work - let's collaborate!
+            </li>
+        </ul>
+        
+        <div class="space-y-4">
+            <div class="p-4 rounded bullying-text">
+                <p>Nobody respects you, and you know it. Just stop trying.</p>
+            </div>
+            <div class="p-4 rounded positive-text">
+                <p>You are valued and an important part of this community.</p>
+            </div>
+        </div>
     </div>
+    
+    <footer class="mt-8 text-center text-gray-600">
+        <p>Remember: Kindness matters. Be supportive, not destructive.</p>
+    </footer>
 </body>
 </html>
